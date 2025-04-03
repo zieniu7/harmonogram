@@ -169,9 +169,9 @@ require 'config.php';
                     const opis = item.opis || "";  // Jeśli brak opisu, to pusta wartość
 
                     // Dodajemy dane do PDF
-                    doc.text(`Firma: ${firma}`, 10, yPosition);
-                    doc.text(`Data: ${data}`, 10, yPosition + 10);
-                    doc.text(`Godzina: ${godzina}`, 10, yPosition + 20);
+                    doc.text(`Data: ${data}`, 10, yPosition);
+                    doc.text(`Godzina: ${godzina}`, 10, yPosition + 10);
+                    doc.text(`Firma: ${firma}`, 10, yPosition + 20);
                     if (opis) {
                         doc.text(`Opis: ${opis}`, 10, yPosition + 30);  // Dodajemy opis, jeśli istnieje
                     }
@@ -196,8 +196,6 @@ require 'config.php';
         }
     });
 }
-
-
 </script>
 </body>
 </html>
