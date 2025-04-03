@@ -1,6 +1,6 @@
 <?php
 require 'config.php';
-header('Content-Type: application/json');
+header('Content-Type: application/json; charset=UTF-8');
 
 // Sprawdzamy, czy mamy ID pracownika w zapytaniu GET
 if (!isset($_GET['pracownikID']) || empty($_GET['pracownikID'])) {
